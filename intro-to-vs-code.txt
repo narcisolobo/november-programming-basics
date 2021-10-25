@@ -1,0 +1,3 @@
+VS Code is an IDE (Integrated Development Environment)
+Fancy way of saying that it's like Word for developers.
+
