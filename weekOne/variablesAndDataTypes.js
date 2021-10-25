@@ -55,3 +55,19 @@ console.log(ten == tenString);
 var nothing = null;
 var nada;
 
+// Activity of the day:
+// Create yourself as a list of variables
+
+var myName = "Narciso Lobo";
+var height = 65;
+var numFingers = 10;
+var numToes = 10;
+var faveColor = 'spring green';
+var faveMovie = 'Eternal Sunshine of the Spotless Mind';
+var faveBand = 'Dawes';
+var faveJoke = "The penguin joke";
+var faveInstrument = "ukulele";
+var isEmployed = true;
+var isAdult = true;
+var isSleeping = false;
+var hasKids = true;
