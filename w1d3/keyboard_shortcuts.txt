@@ -1,0 +1,35 @@
+Cut
+⌘ + X - Mac
+CTRL + X
+
+Copy
+⌘ + C - Mac
+CTRL + C
+
+Paste
+⌘ + V - Mac
+CTRL + V - PC
+
+Save
+⌘ + S - Mac
+CTRL + S - PC
+
+Switch Apps
+⌘ + Tab - Mac
+ALT + Tab - PC
+
+Add next match to selection
+⌘ + D - Mac
+CTRL + D - PC
+
+Add a cursor
+OPT + Click - Mac
+Alt + Click - PC
+
+Move line(s) up or down
+OPT + ↑/OPT + ↓
+ALT + ↑/ALT + ↓
+
+Copy line(s) up or down
+OPT + SHIFT + ↑/OPT + SHIFT + ↓
+ALT + SHIFT + ↑/ALT + SHIFT + ↓
