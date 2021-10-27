@@ -1,0 +1,8 @@
+1. Fill the three gallon jug to the top.
+2. Pour the three gallon into the five gallon.
+3. Fill the three gallon to the top.
+4. Pour that into the five, leaving one gallon in the three.
+5. Empty the five gallon.
+6. Pour the remaining gallon in the small jug into the five.
+7. Fill small one more time.
+8. Pour that into the big.
