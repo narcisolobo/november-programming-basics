@@ -30,7 +30,10 @@ greetingName(8);
 function greetingNameTime(tod, name){
   // Edge case
   if(typeof tod == 'string' && typeof name == 'string'){
+    // string concatenation
     console.log('Good ' + tod + ', ' + name + '!');
+    // template literal notation ~
+    console.log(`Good ${tod}, ${name}!`)
   } else {
     console.log('Please provide a string.');
   }
