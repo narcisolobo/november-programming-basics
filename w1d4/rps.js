@@ -5,6 +5,7 @@ function playGame(p1Array, p2Array) {
   var p1Wins = 0;
   var p2Wins = 0;
   for (let i = 0; i < 10; i++) {
+    console.log(`Game ${i+1}:`);
     var winner = whoWon(p1Array[i], p2Array[i]);
     if (winner === 1) {
       p1Wins++
