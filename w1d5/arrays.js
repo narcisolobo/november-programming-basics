@@ -72,3 +72,95 @@ function printMaxOfArray(arr){
 }
 
 printMaxOfArray([1, 5, 2, 8, 9, 3, 5, 6, 7]);
+
+/*
+6. Get and Print Average
+PrintAverageOfArray(arr)
+Analyze an array’s values and print the average.
+*/
+
+// Pseudocode
+// Create a function named printAverageOfArray(arr) that takes in an array as input.
+// Create a variable called sum to total all the values in the array and set it to 0.
+// Create a for loop that starts at 0, ends at arr.length (the end of the array), and increments by 1.
+  // Inside the for loop, update sum (sum += arr[i]). sum = sum + arr[i]
+// Outside the loop, create a variable called avg and set it to sum / arr.length.
+// Console.log avg
+// Return avg
+
+function printAverageOfArray(arr){
+  var sum = arr[0];
+  for(var i = 1; i < arr.length; i++){
+    sum += arr[i];
+  }
+  console.log(sum / arr.length);
+  return sum / arr.length;
+}
+
+printAverageOfArray([1, 2, 3, 4]);
+
+/*
+7. Array with Odds
+ReturnOddsArray1To255()
+Create an array with all the odd integers between 1 and 255 (inclusive).  
+*/
+
+// Pseudocode
+// Create a function called returnOddsArray1To255()
+// Create a variable called arr and set it to an empty array (var arr = []).
+// Create a for loop that starts var i at 1, ends at 255, and increments by 1.
+// Create a conditional - if i % 2 != 0, then arr.push(i).
+// After the loop console.log(arr).
+// Return arr.
+
+// Method 1
+function returnOddsArray1To255(){
+  var arr = [];
+  for(var i = 1; i <= 255; i++){
+    if(i % 2 != 0){
+      arr.push(i);
+    }
+  }
+  console.log(arr);
+  return arr;
+}
+
+returnOddsArray1To255();
+
+// Method 2
+function returnOddsArray1To255b(){
+  var arr = [];
+  for(var i = 1; i <= 255; i+=2){
+    arr.push(i);
+  }
+  console.log(arr);
+  return arr;
+}
+
+returnOddsArray1To255b();
+
+/*
+8. Square the Values
+SquareArrayVals(arr)
+Square each value in a given array, returning that same array with changed values. 
+*/
+
+// Pseudocode
+// Create a function called squareArrayVals(arr) that takes in an array.
+// Create a for loop that starts at 0, ends at arr.length, and increments by 1.
+  // Inside the for loop, arr[i] *= arr[i] (arr[i] = arr[i] * arr[i]).
+// Outside the loop, return arr.
+
+function squareArrayVals(arr){
+  for(var i = 0; i < arr.length; i++){
+    arr[i] *= arr[i];
+  }
+  return arr;
+}
+
+var newArr = [1, 2, 3, 4]
+
+squareArrayVals(newArr);
+// When we console.log a function call, we are console.logging whatever that function RETURNS
+console.log(squareArrayVals(newArr));
+console.log(newArr);
