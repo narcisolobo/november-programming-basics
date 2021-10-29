@@ -8,7 +8,7 @@ function playGame(select) {
   var computerChoice = randomChoice();
   var winner = whoWon(playerChoice, computerChoice);
   if (winner !== 'tie'){
-    result.innerHTML = `<h1 class="text-center">${winner} won!</h1>`
+    result.innerHTML = `<h1 class="text-center">${winner} WON!</h1>`
   } else {
     result.innerHTML = `<h1 class="text-center">TIE GAME!</h1>`
   }
@@ -48,25 +48,25 @@ function whoWon(player, computer) {
       case 'rock':
         return 'tie';
       case 'paper':
-        return 'The computer';
+        return 'THE COMPUTER';
       case 'scissors':
-        return 'You';
+        return 'YOU';
     }
   } else if (player === 'paper') {
     switch (computer) {
       case 'rock':
-        return 'You';
+        return 'YOU';
       case 'paper':
         return 'tie';
       case 'scissors':
-        return 'The computer';
+        return 'THE COMPUTER';
     }
   } else {
     switch (computer) {
       case 'rock':
-        return 'The computer';
+        return 'THE COMPUTER';
       case 'paper':
-        return 'You';
+        return 'YOU';
       case 'scissors':
         return 'tie';
     }
