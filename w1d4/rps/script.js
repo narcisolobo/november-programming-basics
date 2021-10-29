@@ -1,6 +1,10 @@
-var playerImage = document.querySelector('#playerImage')
-var computerImage = document.querySelector('#computerImage')
-var result = document.querySelector('#result')
+var playerImage = document.querySelector('#playerImage');
+var computerImage = document.querySelector('#computerImage');
+var result = document.querySelector('#result');
+var pWinSpan = document.querySelector('#p-win-span');
+var cWinSpan = document.querySelector('#c-win-span');
+var pWins = 0;
+var cWins = 0;
 
 function playGame(select) {
   var playerChoice = select.value;
@@ -12,6 +16,8 @@ function playGame(select) {
   } else {
     result.innerHTML = `<h1 class="text-center">TIE GAME!</h1>`
   }
+  pWinSpan.innerHTML = `You: ${pWins}`;
+  cWinSpan.innerHTML = `Computer: ${cWins}`;
 }
 
 function randomChoice() {
@@ -48,24 +54,30 @@ function whoWon(player, computer) {
       case 'rock':
         return 'tie';
       case 'paper':
+        cWins++;
         return 'THE COMPUTER';
       case 'scissors':
+        pWins++;
         return 'YOU';
     }
   } else if (player === 'paper') {
     switch (computer) {
       case 'rock':
+        pWins++;
         return 'YOU';
       case 'paper':
         return 'tie';
       case 'scissors':
+        cWins++;
         return 'THE COMPUTER';
     }
   } else {
     switch (computer) {
       case 'rock':
+        cWins++;
         return 'THE COMPUTER';
       case 'paper':
+        pWins++;
         return 'YOU';
       case 'scissors':
         return 'tie';
