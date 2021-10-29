@@ -60,6 +60,7 @@ Given an array, find and print its largest element.
 function printMaxOfArray(arr){
   var max = arr[0];
   for(var i = 1; i < arr.length; i++){
+    // arr[i] means 'the current value in the array'
     if(arr[i] > max){
       // debugging with console.log()
       console.log(arr[i]);
@@ -70,4 +71,4 @@ function printMaxOfArray(arr){
   return max;
 }
 
-printMaxOfArray([-1, -5, -2, -8, -9, -3, -5, -6, -7]);
+printMaxOfArray([1, 5, 2, 8, 9, 3, 5, 6, 7]);
