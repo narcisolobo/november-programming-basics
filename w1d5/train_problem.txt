@@ -1,0 +1,23 @@
+On a train, King, Lobo, and Jones are the fireman, brakeman, and the engineer, but NOT respectively. Also aboard the train are three businessmen who have the same names: a Ms. King, a Mr. Lobo, and a Ms. Jones. Using the clues below, can you determine the identity of the Engineer?
+
+1. Mr. Lobo lives in Detroit.
+2. The brakeman lives exactly halfway between Chicago and Detroit.
+3. Ms. Jones earns exactly $80,000 per year.
+4. The brakeman's nearest neighbor, one of the passengers, earns exactly three times as much as the brakeman.
+5. King beats the fireman in billiards.
+6. The passenger whose name is the same as the brakeman's lives in Chicago.
+
+King - 3
+Lobo - 2
+Jones - 
+
+Answer
+We know that the brakeman doesn’t live in Detroit (2) and that their nearest neighbor is a passenger (4). So that passenger can’t be Mr. Lobo, who lives in Detroit (1).
+
+From (3) and (4) we know that the brakeman’s nearest neighbor also can’t be Ms. Jones (because Ms. Jones earns $80,000 per year, which is not evenly divisible by 3).
+
+Thus, if the brakeman’s nearest neighbor is not Ms. Jones and not Mr. Lobo, it must be Ms. King.
+
+Now, if Mr. Lobo lives in Detroit (1) and Ms. King lives halfway between Chicago and Detroit, then the third passenger, Ms. Jones, must be the one referred to in (6) and thus lives in Chicago.
+
+That means, also from (6), that the brakeman’s name is Jones. And if King is not the fireman (5), then by elimination King must be the engineer.
