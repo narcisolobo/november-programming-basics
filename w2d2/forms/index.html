@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!--
+        Parts of an HTML element
+        Tag, attribute(s), value(s)
+    -->
+    <form>
+        <!-- divs are block elements by default -->
+        <!-- they don't allow other elements side-by-side with them -->
+        <div>
+            <label for="first-name">First Name</label>
+            <!-- Inputs do not have closing tags -->
+            <input type="text" name="first-name" id="first-name" placeholder="Enter your first name">
+        </div>
+        <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" name="last-name" id="last-name" placeholder="Enter your last name">
+        </div>
+        <div>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter a password">
+        </div>
+        <div>
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender">
+                <option selected hidden disabled>Choose Below:</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="non-binary">Non-binary</option>
+                <option value="abstain">Prefer not to say</option>
+            </select>
+        </div>
+        <div>
+            <!-- No more than one element with the same ID -->
+            <p>Join the mailing list?</p>
+            <input type="radio" name="mailing" value="yes" id="mail-yes">
+            <label for="mail-yes">Yes</label>
+            <input type="radio" name="mailing" value="no" id="mail-no">
+            <label for="mail-no">No</label>
+        </div>
+        <div>
+            <p>Check all that apply:</p>
+            <input type="checkbox" name="veteran" id="veteran" value="veteran">
+            <label for="veteran">Veteran</label>
+            <!-- Partner up your labels and inputs with the label's for attribute and the input's ID attribute -->
+            <!-- Name attributes will make more sense in Python, but delineate families for radio buttons -->
+            <!-- Value attributes are for inputs that users do not fill in themselves -->
+        </div>
+        <!-- Textareas -->
+        <!-- Submit button, reset button -->
+    </form>
+</body>
+
+</html>
