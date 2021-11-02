@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Form</title>
 </head>
 
 <body>
@@ -55,11 +55,21 @@
             <p>Check all that apply:</p>
             <input type="checkbox" name="veteran" id="veteran" value="veteran">
             <label for="veteran">Veteran</label>
+            <input type="checkbox" name="senior" id="senior" value="senior">
+            <label for="senior">Senior</label>
             <!-- Partner up your labels and inputs with the label's for attribute and the input's ID attribute -->
             <!-- Name attributes will make more sense in Python, but delineate families for radio buttons -->
             <!-- Value attributes are for inputs that users do not fill in themselves -->
         </div>
-        <!-- Textareas -->
+        <div>
+            <!-- Textareas -->
+            <label for="feedback">Enter your feedback</label><br>
+            <textarea name="feedback" id="feedback" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            <input type="reset" value="RESET FORM">
+            <input type="submit" value="SEND FORM">
+        </div>
         <!-- Submit button, reset button -->
     </form>
 </body>

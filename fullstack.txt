@@ -1,0 +1,14 @@
+The main goal of every stack from Python and beyond is to be able to build a web application capable of full CRUD.
+
+C - Create
+R - Read
+U - Update
+D - Destroy
+
+CREATE - If we have a site that has users' pets, then we need a form for users to submit pets.
+
+READ - For instance, displaying all the pets in the database in a table on the front end (browser).
+
+UPDATE - Allow users to edit their pet's info. We'd better have a form for that.
+
+Destroy - Allow users to delete their pet if they want.
