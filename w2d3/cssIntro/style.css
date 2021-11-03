@@ -1,0 +1,32 @@
+/* *{
+    background-color: orange;
+} */
+
+h3{
+    font-size:medium;
+    color: red;
+}
+
+/* hey there!!! */
+
+#blueGuy{
+    color:blue;
+}
+
+.list{
+    font-size: larger;
+    color: purple;
+}
+
+.highlight{
+    background-color: aliceblue;
+}
+
+#box{
+    height: 100px;
+    width: 700px;
+    /* margin: 40px; */
+    margin-bottom: 100px;
+    padding: 40px;
+    background-color: #1f8635;
+}
