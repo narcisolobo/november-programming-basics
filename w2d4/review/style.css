@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+/*
+Three selectors: 
+Element selector = h1
+Class selector = .name-of-the-class
+ID selector = #name-of-the-ID
+*/
+
+.header {
+  background-color: olive;
+  text-align: center;
+  padding: 10px;
+}
+
+nav {
+  background-color: rgb(152, 152, 0);
+  /* outline: 1px dashed red; */
+}
+
+.nav-menu {
+  width: max-content;
+  /* Magic centering line - element must be smaller than parent width */
+  margin: 0 auto;
+}
+
+.nav-menu li {
+  display: inline-block;
+  margin: 10px;
+}
+
+li a{
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+}
+
+aside {
+  background-color: aqua;
+  display: inline-block;
+  width: 33%;
+  vertical-align: top;
+  padding: 20px;
+  min-height: 500px;
+}
+
+main {
+  background-color: blanchedalmond;
+  display: inline-block;
+  width: 66%;
+  padding: 20px;
+  min-height: 600px;
+}
