@@ -1,0 +1,23 @@
+h1 {
+  color: green;
+}
+
+/* the element with display:flex is now a flex container */
+.container {
+  background-color: aqua;
+  /* turns the parent into a flex container */
+  display: flex;
+  /* horizontal alignment */
+  justify-content: flex-end;
+  /* vertical alignment */
+  align-items: center;
+  min-height: 200px;
+  gap: 20px;
+}
+
+/* any direct children of a flex container are now flex items */
+.child {
+  background-color: coral;
+  width: 100px;
+  min-height: 100px;
+}
