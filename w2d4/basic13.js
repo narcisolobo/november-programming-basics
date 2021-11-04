@@ -60,7 +60,7 @@ Given an array, find and print its largest element.
 
 function printMaxOfArray(arr){
   var max = arr[0];
-  for (var i = 0; i < arr.length; i++){
+  for (var i = 1; i < arr.length; i++){
     if(arr[i] > max){
       max = arr[i];
     }
@@ -112,7 +112,7 @@ function squareArrayVals(arr){
   }
   return arr;
 }
-console.log(squareArrayVals[1, 2, 3, 4]);
+console.log(squareArrayVals([1, 2, 3, 4]));
 
 /*
 9. Greater than Y
@@ -147,7 +147,7 @@ function zeroOutArrayNegativeVals(arr){
   }
   return arr;
 }
-zeroOutArrayNegativeVals([-1, 2, 3, -4, 5]);
+console.log(zeroOutArrayNegativeVals([-1, 2, 3, -4, 5]));
 
 /*
 11. Max, Min, Average
@@ -156,6 +156,20 @@ Given an array, print the max, min and average values for that array.
 Example: printMaxMinAverageArrayVals([1, 2, 3, 4]) --> max: 4, min: 1, avg: 2.5
 */
 
+function printMaxMinAverageArrayVals(arr){
+  var max = arr[0], min = arr[0], sum = arr[0]
+  for (var i = 1; i < arr.length; i++){
+    if(arr[i] > max) {
+      max = arr[i];
+    }
+    if(arr[i] < min) {
+      min = arr[i];
+    }
+    sum += arr[i]
+  }
+  console.log('max: ' + max + ', ' + 'min: ' + min + ', ' + 'avg: ' + sum/arr.length);
+}
+printMaxMinAverageArrayVals([1, 2, 3, 4]);
 
 /*
 12. Shift Array Values
@@ -163,6 +177,15 @@ shiftArrayValsLeft(arr)
 Given an array, move all values forward (to the left) by one index, dropping the first value and leaving a 0 (zero) value at the end of the array.
 Example: shiftArrayValsLeft([1, 2, 3, 4, 5]) --> [2, 3, 4, 5, 0]
 */
+
+function shiftArrayValsLeft(arr){
+  for (var i = 0; i < arr.length; i++){
+    arr[i] = arr[i+1];
+  }
+  arr[arr.length-1] = 0;
+  return arr;
+}
+console.log(shiftArrayValsLeft([1, 2, 3, 4, 5]));
 
 /*
 13. Swap String For Array Negative Values
@@ -172,3 +195,13 @@ Given an array of numbers, replace any negative values with the string 'Dojo'.
 Example: swapStringForArrayNegativeVals([-1, 2, 3, -4, 5]) -- ["Dojo", 2, 3, "Dojo", 5]
 
 */
+
+function swapStringForArrayNegativeVals(arr){
+  for (var i = 0; i < arr.length; i++){
+    if(arr[i] < 0){
+      arr[i] = 'Dojo';
+    }
+  }
+  return arr;
+}
+console.log(swapStringForArrayNegativeVals([-1, 2, 3, -4, 5]));
